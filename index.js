@@ -228,12 +228,12 @@ console.log(artists[8]["name"]);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
  function getArtistByIndex(array, index) {
+    for ()
+    
+    return(`The artist at index ${id} is ${name}.`)
+  }
 
-
-    return(`The artist at index ${id} is ${name}.`);
-  };
-
-  // console.log(getArtistByIndex());
+  // console.log(getArtistByIndex(artists, [0]));
 
 
 
@@ -265,16 +265,15 @@ function get20s(array){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(array, id) {
-  for (i = 0; i < array.length; i++) {
-    if (array[i]===id) {
-        array.splice(i, 0)
-    }
-}
-  return array;
+function removeArtist(array, index) {
+    let removed = artists.splice();
   }
 
-  // console.log(removeArtist(artists, 0))
+  console.log(removeArtist(artists, [0]));
+
+
+
+  
   
  
 
@@ -322,21 +321,12 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  let newArray = [];
-    if (artists.filter((artists) => artists.paintings >= 100)) {
-      newArray.push(array[artists]);
-    }
-    
-  return newArray;
-}
+    let result = artists.map(a => a.name) 
+    return result
 
-// console.log(lotsOfArt(artists));
-
-/*artists.filter((artists) => {
-  return artists.paintings >= 100;
-
-
-
+  }
+  
+  // console.log(lotsOfArt(artists));
 
 
 
