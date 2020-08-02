@@ -227,12 +227,19 @@ console.log(artists[8]["name"]);
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(array, index) {
-    
+ function getArtistByIndex(array, index) {
 
-  
 
-  }
+    return(`The artist at index ${id} is ${name}.`);
+  };
+
+  // console.log(getArtistByIndex());
+
+
+
+  /*if (array.name.includes(index)){
+     
+    }
   
   /**
 
@@ -267,7 +274,7 @@ function removeArtist(array, id) {
   return array;
   }
 
-  console.log(removeArtist(artists, 0))
+  // console.log(removeArtist(artists, 0))
   
  
 
@@ -285,19 +292,24 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(array){
-  let newArray = [];
-  let newArtist = {
-    id: 20,
-    name: 'Drew Rodriguez', 
-    years: 1997 - 2020,
-    genre: 'Web Design', 
-    nationality: 'American',
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  };
   
+  let newArtistArr = artists;
+  let newArtist ={
+    "id": 20,
+    "name": 'Drew Rodriguez', 
+    "years": '1997 - 2020',
+    "genre": 'Web Design', 
+    "nationality": 'American',
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  };
 
+  newArtistArr.push(newArtist);
+
+  return newArtistArr;
+  
   }
 
+  // console.log(addArtist(artists));
 
 
 
@@ -310,15 +322,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  for (i = 0; i < array.length; i++){
-    if (array["paintings"] >= 100);
-  }
-  return array;
+  let newArray = [];
+    if (artists.filter((artists) => artists.paintings >= 100)) {
+      newArray.push(array[artists]);
+    }
+    
+  return newArray;
 }
 
 // console.log(lotsOfArt(artists));
 
-
+/*artists.filter((artists) => {
+  return artists.paintings >= 100;
 
 
 
@@ -349,18 +364,18 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(){
 
-    /* Code here */
+    
 
   }
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+function randomize(){
 
-    /* Code here */
+    
 
   }
 
