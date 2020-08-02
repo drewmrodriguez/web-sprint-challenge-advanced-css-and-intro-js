@@ -227,21 +227,17 @@ console.log(artists[8]["name"]);
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
- function getArtistByIndex(array, index) {
-    for ()
+
+  
+
+ function getArtistByIndex(array, i) {
+    let str = `The artist at index ${array[i].id} is ${array[i].name}`
+    return str;
     
-    return(`The artist at index ${id} is ${name}.`)
   }
 
-  // console.log(getArtistByIndex(artists, [0]));
+  console.log(getArtistByIndex(artists, [0]));
 
-
-
-  /*if (array.name.includes(index)){
-     
-    }
-  
-  /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
