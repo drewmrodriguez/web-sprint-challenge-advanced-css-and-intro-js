@@ -236,7 +236,7 @@ console.log(artists[8]["name"]);
     
   }
 
-  //console.log(getArtistByIndex(artists, [0]));
+  console.log(getArtistByIndex(artists, [0]));
 
 
 
@@ -279,11 +279,6 @@ function removeArtist(array, index) {
   console.log(removeArtist(artists, 0));
 
 
-
-  
-  
- 
-
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
@@ -315,7 +310,7 @@ function addArtist(array){
   
   }
 
-  // console.log(addArtist(artists));
+  console.log(addArtist(artists));
 
 
 
@@ -333,7 +328,7 @@ function lotsOfArt(array){
 
   }
   
-  // console.log(lotsOfArt(artists));
+  console.log(lotsOfArt(artists));
 
 
 
